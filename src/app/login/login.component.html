@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    Incio de sesion 
+                </div>
+                <div class="card-body">
+
+                    <label class="nombre"> Nombre</label>
+                    <input type="text" name="" id="" class="form-control" [(ngModel)]="nombre">
+                    <label class="contraseña"> Contraseña</label>
+
+                    <input type="password" name="" id="" class="form-control" [(ngModel)]="password">
+                    <br>
+
+                    <button class="btn btn-primary"(click)="mostrarNombre()" >  Ingresar</button>
+
+                    <a href="/registro"  class="btn btn-primary">Ingreso</a>
+                    
+
+
+
+
+                </div>
+            </div>
+            <h1 > {{nombre}}</h1>
+            <h1 > {{password}}</h1>
+
+
+            
+        </div>
+        <div class="col">
+           
+        </div>
+    </div>
+</div>
+
