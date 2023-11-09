@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule } from '@angular/forms';
 import { RegistroComponent } from './registro/registro.component';
+import { ContraComponent } from './contra/contra.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { RegistroComponent } from './registro/registro.component';
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    RegistroComponent
+    RegistroComponent,
+    ContraComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,5 @@
+<header> <H1> LOGIN</H1></header>
+
 <div class="container">
     <div class="row">
         <div class="col">
@@ -6,36 +8,40 @@
         <div class="col">
             <div class="card">
                 <div class="card-header">
-                    Incio de sesion 
+                    Iniciar sesion
                 </div>
                 <div class="card-body">
+                    <label for="correo">Correo electronico:</label> <br>
+                    <input type="text" name="correo" id="correo" class="form-control" [(ngModel)]="correo" required> 
+                    <label for="contraseña">Contraseña</label> <br>
+                    <input type="password" name="contraseña" id="contraseña" class="form-control" [(ngModel)]="password" required> <br>
 
-                    <label class="nombre"> Nombre</label>
-                    <input type="text" name="" id="" class="form-control" [(ngModel)]="nombre">
-                    <label class="contraseña"> Contraseña</label>
+                    <a href="./dashboard" class="btn btn-primary"(click)=ingresarNombre()>Ingresar</a>
+                    <a  id="es" href="/registro"  class="btn btn-primary">Registro</a><br>
+                    <a href="/contra">¿olvidaste tu contraseña?</a>
 
-                    <input type="password" name="" id="" class="form-control" [(ngModel)]="password">
-                    <br>
 
-                    <button class="btn btn-primary"(click)="mostrarNombre()" >  Ingresar</button>
-
-                    <a href="/registro"  class="btn btn-primary">Ingreso</a>
                     
-
-
-
-
                 </div>
             </div>
-            <h1 > {{nombre}}</h1>
-            <h1 > {{password}}</h1>
-
-
-            
         </div>
         <div class="col">
-           
+
         </div>
     </div>
 </div>
 
+                   
+
+
+
+
+
+
+                    
+                    
+
+                
+
+
+           

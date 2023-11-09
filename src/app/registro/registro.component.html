@@ -1,1 +1,33 @@
-<h3> uhugdy</h3>
+<div class="container">
+  <div class="row">
+      <div class="col">
+
+      </div>
+      <div class="col">
+          <div class="card">
+              <div class="card-header">
+                  Registrar 
+              </div>
+              <div class="card-body">
+                <label for="nombre">Nombre:</label> <br>
+                <input type="text" name="nombre" id="nombre" class="form-control" [(ngModel)]="nombre" required> 
+                  <label for="correo">Correo electronico:</label> <br>
+                  <input type="text" name="correo" id="correo" class="form-control" [(ngModel)]="correo" required> 
+                
+                  <label for="contraseña">Contraseña</label> <br>
+                  <input type="password" name="password" id="password" class="form-control" [(ngModel)]="password" required> <br>
+
+                  <a href="./dashboard" class="btn btn-primary"(click)=ingresar()>Registrar</a>
+
+
+                  
+              </div>
+          </div>
+      </div>
+      <div class="col">
+
+      </div>
+  </div>
+</div>
+
+        

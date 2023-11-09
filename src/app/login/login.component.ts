@@ -5,24 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
-  nombre:String='';
-  password:String='';
-
-
-  constructor(){
-
-  }
-
-  ngOnInit(): void{
-
-
-  }
-  mostrarNombre(){
-    this.nombre=''
-
-  }
-
- 
+export class LoginComponent implements OnInit{
+  correo: string='';
+  password: string='';
   
+  ngOnInit(): void {
+  }
+
+  ingresarNombre(){
+    localStorage.setItem('correo',this.correo)
+    localStorage.setItem('password',this.password)}
+
 }
